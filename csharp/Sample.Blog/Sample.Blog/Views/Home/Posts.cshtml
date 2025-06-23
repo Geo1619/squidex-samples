@@ -10,7 +10,7 @@
         <a asp-action="Post" asp-route-slug="@post.Data.Slug" asp-route-id="@post.Id">
             <h2>@post.Data.Title</h2>
         </a>
-
+        <img src="@post.GetImageUrl()" alt="Blog Image" width="100" />
         @Html.Raw(post.Data.Text)
     </div>
 
